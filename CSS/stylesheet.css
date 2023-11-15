@@ -1,0 +1,72 @@
+/********** GENERAL STYLING **********/
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.my-name-intro {
+    font-family: 'Pacifico', cursive;
+}
+
+.my-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: fit-content;
+    align-self: center;
+    padding: 0 5px 10px 5px;
+}
+
+figure img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+/********** END GENERAL STYLING **********/
+
+/* Section Backgrounds */
+#home {
+    background-color: lightgray;
+}
+
+#about {
+    background-color: lightblue;
+}
+
+#projects {
+    background-color: lightgray;
+}
+
+#contact {
+    background-color: lightblue;
+}
+
+
+
