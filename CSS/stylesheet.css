@@ -1,6 +1,15 @@
+/********** VARIABLES **********/
+:root {
+    --Beige: #DDC3A5;
+    --Black-brown: #201E20;
+    --Tan: #E0A96D;
+}
+/********** END VARIABLES **********/
+
 /********** GENERAL STYLING **********/
 * {
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,11 +17,13 @@ body {
 }
 
 section {
+    color: var(--Black-brown);
     display: block;
     width: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 5px 20px;
+    min-height: 400px; /* Temporary - this is just so I have more page to scroll */
 }
 
 .my-name-intro {
@@ -21,8 +32,9 @@ section {
 
 .my-name {
     font-family: 'Anton', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
+    letter-spacing: .2rem;
 }
 
 figure {
@@ -47,25 +59,58 @@ figure img {
     max-width: 500px;
     height: auto;
     border-radius: 5px;
-    padding: 0 5px;
+    /* 
+    padding: 0 5px; - Padding removes border radius
+    */
 }
 /********** END GENERAL STYLING **********/
 
+/********** NAVBAR STYLING **********/
+nav {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--Black-brown);
+    padding: 15px 10px 15px 15px;
+    text-align: right;
+}
+
+nav > a {
+    color: var(--Beige);
+    text-align: center;
+    font-weight: 700;
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+nav > a:active {
+    color: var(--Tan);
+}
+
+/********** END NAVBAR STYLING **********/
+
 /* Section Backgrounds */
 #home {
-    background-color: lightgray;
+    background-color: var(--Beige);
 }
 
 #about {
-    background-color: lightblue;
+    background-color: var(--Tan);
 }
 
 #projects {
-    background-color: lightgray;
+    background-color: var(--Beige);
 }
 
 #contact {
-    background-color: lightblue;
+    background-color: var(--Tan);
 }
 
 
