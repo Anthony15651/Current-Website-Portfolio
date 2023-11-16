@@ -1,9 +1,12 @@
 /********** VARIABLES **********/
 :root {
     --Beige: #DDC3A5;
+    --Black: #000000;
     --Black-brown: #201E20;
     --Tan: #E0A96D;
+    --Light: #F0E9DA;
 }
+
 /********** END VARIABLES **********/
 
 /********** GENERAL STYLING **********/
@@ -23,7 +26,6 @@ section {
     box-sizing: border-box;
     margin: 0;
     padding: 5px 20px;
-    min-height: 400px; /* Temporary - this is just so I have more page to scroll */
 }
 
 .my-name-intro {
@@ -55,6 +57,21 @@ figcaption {
     padding: 0 5px 10px 5px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.caption {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+}
+
 figure img {
     width: 100%;
     max-width: 500px;
@@ -62,6 +79,7 @@ figure img {
     max-height: 500px;
     align-self: center;
     border-radius: 5px;
+    margin-bottom: 10px;
     /* 
     padding: 0 5px; - Padding removes border radius
     */
@@ -97,7 +115,91 @@ h1 {
     max-width: 170px;
     color: var(--Black-brown);
 }
+
+button {
+    color: var(--Beige);
+    background-color: var(--Black-brown);
+    border: 1px solid var(--Black-brown);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: var(--Black);
+    color: var(--Light);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+p {
+    color: var(black --Black-brown);
+    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+}
+
+i {
+    font-size: max(6vmin, 14px); /* Font will be no smaller than 14px */
+    padding: 10px 20px;
+    color: var(--Black-brown);
+}
+
 /********** END GENERAL STYLING **********/
+
+/********** FORM STYLING **********/
+form {
+    width: 100%;
+    margin: 15px 0;
+    max-width: 500px;
+    height: auto;
+    max-height: 500px;
+}
+
+form label {
+    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+}
+
+form input,
+form textarea {
+    font-size: max(2vmin, 14px); /* Font will be no smaller than 14px */
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 2px 0px 13px 0px;
+    border-radius: 5px;
+    border: 2px solid var(--Black-brown);
+    color: var(--Black-brown);
+    background-color: var(--Light);
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: var(--Beige);
+}
+
+form input[type="submit"] {
+    margin: 10px 0;
+    max-width: 100px;
+    font-size: max(2vmin, 14px); /* Font will be no smaller than 14px */
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--Black-brown);
+    color: var(--Light);
+    cursor: pointer;
+}
+
+form input[type="submit"]:active {
+    transform: translateY(2px);
+}
+
+/********** END FORM STYLING **********/
 
 /********** NAVBAR STYLING **********/
 nav {
@@ -111,7 +213,7 @@ nav {
     text-align: right;
 }
 
-nav > a {
+nav>a {
     color: var(--Beige);
     text-align: center;
     font-size: max(3vmin, 13px);
@@ -121,11 +223,11 @@ nav > a {
     text-decoration: none;
 }
 
-nav > a:hover {
+nav>a:hover {
     text-decoration: underline;
 }
 
-nav > a:active {
+nav>a:active {
     color: var(--Tan);
 }
 
@@ -147,6 +249,3 @@ nav > a:active {
 #contact {
     background-color: var(--Tan);
 }
-
-
-

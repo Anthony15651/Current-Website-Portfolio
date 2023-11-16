@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/bf3fdf2a36.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -102,13 +103,44 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <h1>Projects Overview</h1>
-      <p>This is still a work in progress. Please check back soon!</p>
+      <figure>
+        <img src="./Images/GenericProjects.jpg" alt="Generic project photo" />
+        <figcaption>
+          <h1>Projects:</h1>
+          If you're interested in checking out some of my previous work, please
+          click on the button below to explore a selection of my projects.
+          <br /><br />
+          With each project I focus not only on delivering a functional product,
+          but also on the satisfaction of the user.
+          <br /><br />
+          <a href="./HTML/projects.html"><button>Projects</button></a>
+        </figcaption>
+      </figure>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-      <h1>Contact Section</h1>
-      <p>This is still a work in progress. Please check back soon!</p>
+      <div class="container">
+        <div class="caption">
+          <h1>Contact:</h1>
+          <p>Please reach out with any comments or inqueries!</p>
+          <a href="https://www.linkedin.com/in/anthonyjaemesgarcia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Anthony15651" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mlekvzqr" method="post">
+          <label for="name" class="top-space"
+            >Name: <input type="text" id="name" name="name" required
+          /></label>
+          <label for="email"
+            >Email: <input type="email" id="email" name="email" required
+          /></label>
+          <label for="message"
+            >Message: <textarea id="message" name="message" required></textarea>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </section>
   </body>
 </html>
