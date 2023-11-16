@@ -28,11 +28,12 @@ section {
 
 .my-name-intro {
     font-family: 'Pacifico', cursive;
+    font-size: 4vmin;
 }
 
 .my-name {
     font-family: 'Anton', sans-serif;
-    font-size: 3rem;
+    font-size: 8vmin;
     font-weight: 700;
     letter-spacing: .2rem;
 }
@@ -45,9 +46,9 @@ figure {
 
 figcaption {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     max-height: fit-content;
     align-self: center;
@@ -58,10 +59,18 @@ figure img {
     width: 100%;
     max-width: 500px;
     height: auto;
+    max-height: 500px;
+    align-self: center;
     border-radius: 5px;
     /* 
     padding: 0 5px; - Padding removes border radius
     */
+}
+
+h1 {
+    text-align: center;
+    font-size: 10vmin;
+    margin-top: 20px;
 }
 /********** END GENERAL STYLING **********/
 
@@ -80,6 +89,7 @@ nav {
 nav > a {
     color: var(--Beige);
     text-align: center;
+    font-size: max(3vmin, 13px);
     font-weight: 700;
     padding-left: 20px;
     cursor: pointer;
