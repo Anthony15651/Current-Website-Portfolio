@@ -143,8 +143,13 @@ p {
 
 i {
     font-size: max(6vmin, 14px); /* Font will be no smaller than 14px */
-    padding: 10px 20px;
+    margin: 10px 20px;
     color: var(--Black-brown);
+}
+
+i:hover {
+    color: var(--Light);
+    transition: color .2s;
 }
 
 /********** END GENERAL STYLING **********/
