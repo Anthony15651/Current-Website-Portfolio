@@ -4,7 +4,7 @@
     <title>Anthony Garcia's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
     <link rel="stylesheet" href="./CSS/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/bf3fdf2a36.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bf3fdf2a36.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -22,6 +25,15 @@
       <a href="./HTML/about.html">About Me</a>
       <a href="./HTML/projects.html">Projects</a>
       <a href="./HTML/contact.html">Contact</a>
+      <div class="dropdown">
+        <i class="fa-solid fa-bars dropbtn"></i>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="./HTML/about.html">About Me</a>
+          <a href="./HTML/projects.html">Projects</a>
+          <a href="./HTML/contact.html">Contact</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Home Section -->
@@ -111,8 +123,8 @@
           If you're interested in checking out some of my previous work, please
           click on the button below to explore a selection of my projects.
           <br /><br />
-          With every project I focus not only on delivering an outstanding product,
-          but also on the satisfaction of the user.
+          With every project I focus not only on delivering an outstanding
+          product, but also on the satisfaction of the user.
           <br /><br />
           <a href="./HTML/projects.html"><button>Projects</button></a>
         </figcaption>
@@ -126,11 +138,21 @@
           <h1>Contact:</h1>
           <p>Please reach out with any comments or inqueries!</p>
           <p class="email-link">contact@anthonygarciaportfolio.com</p>
-          <a href="https://www.linkedin.com/in/anthonyjaemesgarcia/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Anthony15651" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/anthonyjaemesgarcia/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Anthony15651" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
         <!-- Contact Form -->
-        <form action="https://formspree.io/f/mlekvzqr" method="post" id="home-form">
+        <form
+          action="https://formspree.io/f/mlekvzqr"
+          method="post"
+          id="home-form"
+        >
           <label for="name" class="top-space"
             >Name: <input type="text" id="name" name="name" required
           /></label>

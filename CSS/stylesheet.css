@@ -49,7 +49,8 @@ figure {
 
 figcaption {
     text-align: center;
-    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(3vmin, 14px);
+    /* Font will be no smaller than 14px */
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -110,7 +111,8 @@ h1 {
 .icon-text p {
     margin-top: 0;
     text-align: center;
-    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(3vmin, 14px);
+    /* Font will be no smaller than 14px */
     font-weight: 600;
     text-overflow: clip;
     max-width: 170px;
@@ -123,7 +125,8 @@ button {
     border: 1px solid var(--Black-brown);
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(3vmin, 14px);
+    /* Font will be no smaller than 14px */
     margin: 20px auto;
 }
 
@@ -139,11 +142,13 @@ button:active {
 
 p {
     color: var(black --Black-brown);
-    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(3vmin, 14px);
+    /* Font will be no smaller than 14px */
 }
 
 i {
-    font-size: max(6vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(6vmin, 14px);
+    /* Font will be no smaller than 14px */
     margin: 10px 20px;
     color: var(--Black-brown);
 }
@@ -154,7 +159,8 @@ i:hover {
 }
 
 .email-link {
-    font-size: max(2.25vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(2.25vmin, 14px);
+    /* Font will be no smaller than 14px */
 }
 
 .center {
@@ -176,12 +182,14 @@ form {
 }
 
 form label {
-    font-size: max(3vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(3vmin, 14px);
+    /* Font will be no smaller than 14px */
 }
 
 form input,
 form textarea {
-    font-size: max(2vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(2vmin, 14px);
+    /* Font will be no smaller than 14px */
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -203,7 +211,8 @@ form textarea:focus {
 form input[type="submit"] {
     margin: 10px 0;
     max-width: 100px;
-    font-size: max(2vmin, 14px); /* Font will be no smaller than 14px */
+    font-size: max(2vmin, 14px);
+    /* Font will be no smaller than 14px */
 }
 
 form input[type="submit"]:hover {
@@ -220,6 +229,7 @@ form input[type="submit"]:active {
 #contact-form textarea {
     margin: 0 auto 30px auto;
 }
+
 /********** END FORM STYLING **********/
 
 /********** NAVBAR STYLING **********/
@@ -250,6 +260,59 @@ nav>a:hover {
 
 nav>a:active {
     color: var(--Tan);
+}
+
+@media (min-width: 769px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    nav>a {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--Black-brown);
+        min-width: 160px;
+        z-index: 1;
+        right: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        text-decoration: underline;
+    }
+
+    .dropdown-content a {
+        color: var(--Beige);
+        padding: 12px 16px;
+        font-size: max(3vmin, 13px);
+        text-decoration: none;
+        display: block;
+        text-align: right;
+    }
+
+    .dropbtn {
+        color: var(--Beige);
+        text-align: center;
+        font-size: max(5vmin, 13px);
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0 20px 0 0;
+    }
 }
 
 /********** END NAVBAR STYLING **********/
