@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/bf3fdf2a36.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -19,7 +23,48 @@
       <a href="./projects.html">Projects</a>
       <a href="./contact.html">Contact</a>
     </nav>
-    <h1>This will be my Contact page</h1>
-    <p>Please check back soon!</p>
+
+    <section id="contact-text" class="beige">
+      <div class="container">
+        <div class="caption">
+          <h1>Contact:</h1>
+          <p>
+            If you'd like to collorate on a project, please reach out using one of
+            the methods below!
+          </p>
+          <a
+            href="https://www.linkedin.com/in/anthonyjaemesgarcia/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto: contact@anthonygarciaportfolio.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <br><br>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form" class="tan">
+      <div class="container">
+        <!-- Contact Form -->
+        <form
+          action="https://formspree.io/f/mlekvzqr"
+          method="post"
+          class="center"
+        >
+          <label for="name" class="top-space center"
+            >Name: <input type="text" id="name" name="name" required
+          /></label>
+          <label for="email"
+            >Email: <input type="email" id="email" name="email" required
+          /></label>
+          <label for="message"
+            >Message: <textarea id="message" name="message" rows="5" required></textarea>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
   </body>
 </html>
