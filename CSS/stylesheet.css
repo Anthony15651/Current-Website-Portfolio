@@ -11,13 +11,13 @@
 
 /********** GENERAL STYLING **********/
 * {
-    font-family: sans-serif;
+    font-family: 'Kanit', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    background-color: var(--Tan);
+    background-color: var(--Black-brown);
 }
 
 section {
@@ -168,6 +168,11 @@ i:hover {
     justify-content: center;
     align-items: center;
     align-self: center;
+}
+
+.clean-link {
+    text-decoration: underline;
+    color: var(--Black-brown);
 }
 
 /********** END GENERAL STYLING **********/
