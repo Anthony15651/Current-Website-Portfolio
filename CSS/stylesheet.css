@@ -93,6 +93,12 @@ h1 {
     margin: 20px 0px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 6vmin;
+    margin: auto;
+}
+
 .technology-icons {
     display: flex;
     flex-wrap: wrap;
@@ -170,9 +176,28 @@ i:hover {
     align-self: center;
 }
 
+.left {
+    text-align: left;
+}
+
 .clean-link {
     text-decoration: underline;
     color: var(--Black-brown);
+}
+
+.view-code {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    min-width: 85px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: var(--Light);
+    text-decoration: none;
+}
+
+.view-code:active {
+    transform: translateY(2px);
 }
 
 /********** END GENERAL STYLING **********/
@@ -334,4 +359,8 @@ nav>a:active {
 
 .tan {
     background-color: var(--Tan);
+}
+
+.black-brown {
+    background-color: var(--Black-brown);
 }
