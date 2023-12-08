@@ -293,7 +293,7 @@ nav>a:active {
 }
 
 /* Media Queries - This will turn the nav bar into a drop down menu for mobile screens
---Due to issues with ":hover" on mobile, it is better to turn the drop down into a clickable event once I add JS--
+--Due to issues with ":hover" on mobile, it is better to turn the drop down into a clickable event once I add JS--  */
 
 @media (min-width: 769px) {
     .dropdown {
@@ -320,9 +320,13 @@ nav>a:active {
         right: 0;
     }
 
+    /*
     .dropdown:hover .dropdown-content {
         display: block;
     }
+
+    Added JS event handler to open and close menu with click
+    */
 
     .dropdown-content a:hover {
         text-decoration: underline;
@@ -347,8 +351,6 @@ nav>a:active {
         padding: 0 20px 0 0;
     }
 }
-
-*/
 
 /********** END NAVBAR STYLING **********/
 
