@@ -9,6 +9,19 @@
 
 /********** END VARIABLES **********/
 
+/********** KEYFRAMES ANIMATIONS **********/
+@keyframes fadeInOnLoad {
+    0% {
+      /* transform: translateY(100%); */
+      opacity: 0;
+    }
+    100% {
+      /* transform: translateY(0%); */
+      opacity: 1;
+    }
+  }
+/********** END KEYFRAMES ANIMATIONS **********/
+
 /********** GENERAL STYLING **********/
 * {
     font-family: 'Kanit', sans-serif;
@@ -27,6 +40,7 @@ section {
     box-sizing: border-box;
     margin: 0;
     padding: 5px 20px;
+    animation: 1s fadeInOnLoad;
 }
 
 .my-name-intro {
@@ -272,6 +286,7 @@ nav {
     background-color: var(--Black-brown);
     padding: 15px 10px 15px 15px;
     text-align: right;
+    z-index: 3;
 }
 
 nav>a {
