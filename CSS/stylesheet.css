@@ -40,7 +40,7 @@ section {
     box-sizing: border-box;
     margin: 0;
     padding: 5px 20px;
-    animation: 1s fadeInOnLoad;
+    animation: 1.25s fadeInOnLoad;
 }
 
 .my-name-intro {
@@ -297,6 +297,7 @@ nav>a {
     padding-left: 20px;
     cursor: pointer;
     text-decoration: none;
+    animation: 1.25s fadeInOnLoad;
 }
 
 nav>a:hover {
@@ -364,6 +365,7 @@ nav>a:active {
         cursor: pointer;
         margin: 0;
         padding: 0 20px 0 0;
+        animation: 1.25s fadeInOnLoad;
     }
 }
 
